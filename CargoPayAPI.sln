@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35506.116 d17.12
+VisualStudioVersion = 17.12.35506.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CargoPayAPI", "CargoPayAPI.csproj", "{293D377E-D9C8-422B-9B74-AED0DDCE242E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CargoPayAPITest", "..\CargoAPITest\CargoPayAPITest.csproj", "{D2B4F13D-F17D-435F-9242-0B30DE3F869B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{293D377E-D9C8-422B-9B74-AED0DDCE242E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{293D377E-D9C8-422B-9B74-AED0DDCE242E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{293D377E-D9C8-422B-9B74-AED0DDCE242E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2B4F13D-F17D-435F-9242-0B30DE3F869B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2B4F13D-F17D-435F-9242-0B30DE3F869B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2B4F13D-F17D-435F-9242-0B30DE3F869B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2B4F13D-F17D-435F-9242-0B30DE3F869B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

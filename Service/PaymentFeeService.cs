@@ -34,7 +34,7 @@ namespace CargoPayAPI.Service
         {
             while (true)
             {
-                await Task.Delay(TimeSpan.FromSeconds(5)); 
+                await Task.Delay(TimeSpan.FromHours(1)); 
                 ForceUpdateFee();
             }
         }
