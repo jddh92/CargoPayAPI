@@ -15,8 +15,15 @@ namespace CargoPayAPI.Service
 
         public async Task<Card> CreateCardAsync()
         {
-            var cardNumber = new string(Enumerable.Repeat("0123456789", 15)
-                .Select(s => s[new Random().Next(s.Length)]).ToArray());
+            string cardNumber;
+            Card existingCard;
+            do
+            {
+                cardNumber = new string(Enumerable.Repeat("0123456789", 15)
+                    .Select(s => s[new Random().Next(s.Length)]).ToArray());
+                existingCard = await _cardRepository.GetCardAsync(cardNumber);
+            } while (existingCard != null);
+
             return await _cardRepository.CreateCardAsync(cardNumber);
         }
 
